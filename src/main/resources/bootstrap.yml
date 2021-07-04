@@ -1,9 +1,0 @@
-server:
-  port: 9001
-
-spring:
-  application:
-    name: goodgood
-  cloud:
-    config:
-      uri: http://localhost:9000

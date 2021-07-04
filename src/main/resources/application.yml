@@ -1,5 +1,18 @@
-management:
-  endpoints:
-    web:
-      exposure:
-        include: refresh
+spring:
+  profiles:
+    active: live
+---
+server:
+  port: 9001
+
+spring:
+  profiles: live
+  application:
+    name: goodgood
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+    register-with-eureka: true
+    fetch-registry: true
